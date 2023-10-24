@@ -1,0 +1,68 @@
+#oculto {
+    display: block;
+    animation: slideOutToLeft 0.2s ease-in-out forwards;
+}
+
+#mostrar {
+    display: block;
+    animation: slideInFromLeft 0.2s ease-in-out forwards;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutToLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+.Navegacion_lateral button {
+    transform: translateX(-200px);
+}
+
+
+#mostrar .boton1 {
+    transform: translateX(0%);
+    animation: slideInFromLeft 0.4s ease-in-out forwards;
+
+}
+
+#mostrar .boton2 {
+    transform: translateX(0%);
+    animation: slideInFromLeft 0.5s ease-in-out forwards;
+
+}
+
+#mostrar .boton3 {
+    transform: translateX(0%);
+    animation: slideInFromLeft 0.6s ease-in-out forwards;
+
+
+}
+
+#mostrar .boton4 {
+    transform: translateX(0%);
+    animation: slideInFromLeft 0.7s ease-in-out forwards;
+
+}
+
+.Navegacion_lateral {
+    max-width: 40%;
+    top: 42px;
+    background-color: #14527F;
+    z-index: 1030;
+    animation: slideInFromLeft 0.5s ease-out 0s;
+
+}

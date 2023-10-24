@@ -1,0 +1,162 @@
+
+#blogIndividual {
+    background-color: white;
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+#Comentarios {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+}
+#Comentarios textarea{
+    max-height: 600px;
+}
+#Modificar{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-color: black;
+}
+
+#Contenido{
+    resize: both;
+}
+#like {
+    position: relative;
+    margin-top: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#comentarioDiv {
+    background-color: #111820;
+    position: relative;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#comentarioDiv div {
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+    background-color: #16202A;
+    padding: 30px;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+#Titulo{
+    text-align: center;
+}
+
+  /* Pantallas pequeñas */
+  @media screen and (max-width: 480px) {
+    #like img{
+        width: 100%;
+        height: 100%;
+    }
+    #like{
+        width: 70px;
+        height: 50px;
+    }
+    #comentarioInput{
+        width: 60%;
+    }
+    #comentarioDiv div {
+        width: 60%;
+    }
+    #comentarioDiv button {
+        width: 100%;
+    }
+    .selectOpciones{
+        width: 40%;
+    }
+    #Contenido {
+        width: 20vw;
+        height: 100px;
+        max-width: 60vw;
+        max-height: 400px;
+    }
+    #Titulo{
+        width: 90%;
+    }
+    .selectOpciones{
+        width: 80%;
+    }
+    
+  }
+  
+  /* Pantallas medianas */
+  @media screen and (min-width: 481px) and (max-width: 1024px) {
+    #like img{
+        width: 100%;
+        height: 100%;
+    }
+    #like{
+        width: 70px;
+        height: 50px;
+    }
+    #comentarioInput{
+        width: 30%;
+    }
+    #comentarioDiv div {
+        width: 60%;
+    }
+    #Contenido {
+        width: 20vw;
+        height: 300px;
+        max-width: 60vw;
+        max-height: 900px;
+    }
+    #Titulo{
+        width: 70%;
+    }
+    .selectOpciones{
+        width: 30%;
+    }
+  }
+  
+  /* Pantallas grandes */
+  @media screen and (min-width: 1025px) {
+    #like img{
+        width: 100%;
+        height: 100%;
+    }
+    #like{
+        width: 70px;
+        height: 50px;
+    }
+    #comentarioInput{
+        width: 30%;
+    }
+    #comentarioDiv div {
+        width: 800px;
+    }
+    #Contenido {
+        width: 20vw;
+        height: 300px;
+        max-width: 60vw;
+        max-height: 900px;
+    }
+    #Titulo{
+        width: 80%;
+    }
+    .selectOpciones{
+        width: 15%;
+    }
+  }

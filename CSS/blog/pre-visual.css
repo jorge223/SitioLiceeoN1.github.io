@@ -1,0 +1,143 @@
+
+
+#blogContenedor {
+    background-color: white;
+    position: relative;
+    top: 100px;
+}
+
+#blogContenedor button{
+    background-color: white;
+    border-style: none;
+}
+
+#publicar{
+    position: relative;
+    top: 100px;
+    width: 80%;
+    background-color: #F8F8F8;
+    margin: 0 auto;
+    text-align: center;
+}
+#FormularioBlogAniadir{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#FormularioBlogAniadir label{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+#FormularioBlogAniadir input{
+    text-align: center;
+    border-color: black;
+}
+
+
+
+#botonesPaginadoBlog{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+.mostrarForm{
+    visibility: visible;
+}
+.ocultarForm{
+    visibility: hidden;
+    position: absolute;
+
+}
+
+#Contenido{
+    margin-top: 20px;
+    resize: both;
+    border-color: black;
+}
+
+#Contenido::placeholder{
+    text-align: center;
+}
+
+#listaEnum{
+    text-align: center;
+    overflow: hidden;
+    border-color: black;
+}
+  /* Pantallas pequeñas */
+@media screen and (max-width: 480px) {
+    #Contenido {
+      width: 50%;
+      height: 80%;
+      max-width: 90%;
+      max-height: 400px;
+    }
+    #listaEnum{
+        height: 110px;
+        width: 80%;
+    }
+    .Enviar{
+        width: 50%;
+    }
+    .Titulo{
+        width: 90%;
+    }
+    .lanzarPost{
+        overflow: hidden;
+        width: 50%;
+    }
+
+  }
+  
+  /* Pantallas medianas */
+  @media screen and (min-width: 481px) and (max-width: 1024px) {
+    #Contenido {
+        width: 40%;
+        height: 80%;
+        max-width: 90%;
+        max-height: 400px;
+    }
+    #listaEnum{
+        height: 110px;
+        width: 40%;
+    }
+    .Enviar{
+        width: 40%;
+    }
+    .Titulo{
+        width: 50%;
+    }
+    .lanzarPost{
+        width: 40%;
+    }
+  }
+  
+  /* Pantallas grandes */
+  @media screen and (min-width: 1025px) {
+    #Contenido {
+      width: 30%;
+      height: 300px;
+      max-width: 95%;
+      max-height: 900px;
+    }
+    #listaEnum{
+        height: 110px;
+        width: 20%;
+    }
+    .Enviar{
+        width: 10%;
+    }
+    .Titulo{
+        width: 25%;
+    }
+    .lanzarPost{
+        width: 10%;
+    }
+  }
+  #botonesPaginadoBlog {
+    overflow-y: auto;    
+  }

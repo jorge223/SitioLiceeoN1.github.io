@@ -1,0 +1,42 @@
+body {
+    background-color: #343a40;
+}
+
+#inicio {
+    background-color: #14527F;
+    height: 400px;
+    width: 800px;
+    margin-left: 20%;
+    margin-top: 12%;
+    padding-top:3%;
+}
+
+h1 {
+    color: aliceblue;
+    margin-left: 35%;
+}
+
+.informacion {
+    width: 400px;
+}
+
+form {
+    margin-left:10%;
+    width:650px;
+}
+
+label {
+    color:aliceblue;
+
+
+}
+
+button {
+    width:150px;
+    margin-top:50px;
+    margin-left:35%;
+}
+
+.contrasena {
+    margin-top:5%;
+}

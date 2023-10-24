@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap-4.6.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/style.css">
+    <link rel="stylesheet" href="../../CSS/Administrar/Botones.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/animacion.css">
+</head>
+
+<body>
+    <header class="fixed-top">
+        <div class="cont">
+            <img src="../../Imagen/Menu.jpeg" alt="Error" class="Menu float-left position-fixed"
+                onclick="mostrarlateral(); cambiarImagen();">
+            <p class="nombresup text-center">Administrar</p>
+        </div>
+        <nav class="navbar">
+            <ul id="Navegacion_superior" class="navbar-nav position-fixed bg-dark navbar-expand vw-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../HTML/Administrar/materia.html">Materias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../HTML/Administrar/curso.html">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../HTML/Administrar/Estudiante.html">Estudiantes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../HTML/Administrar/profesor.html">Profesores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../HTML/Administrar/administrador.html">Administradores</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <nav class="Navegacion_lateral vh-100 col-2 p-0 position-fixed text-center d-none" id="oculto">
+            <figure class="">
+                <img src="../../Imagen/Logo.png" class="Logo" alt="Error al cargar">
+            </figure>
+            <ul class="lista_lateral m-0 p-0">
+                <div id="slider" class="slide-in">
+                    <li>
+                        <button class="boton1 list-group-item-action text-nowrap text-truncate"><a
+                                href="../../index.html">Inicio</a></button>
+                    </li>
+                    <li>
+                        <button class="boton2 list-group-item-action text-nowrap mt-2 text-truncate"><a
+                                href="../../HTML/Curso/horario.html">Cursos</a></button>
+                    </li>
+                    <li>
+                        <button
+                            class="boton3 list-group-item-action text-nowrap mt-2 text-truncate"><a
+                                href="../../HTML/Blog/pre-visual.html">Blog</a></button>
+                    </li>
+                    <li>
+                        <button
+                            class="boton4 list-group-item-action text-nowrap mt-2 text-truncate"><a
+                                href="../../HTML/Administrar/administrador.html">Administrar</a></button>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </section>
+    <section>
+
+        <main id="info_principal" class="border container bg-light text-break">
+            <div class="input-group flex-nowrap mt-4" id="divFiltrado">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Administrador</span>
+                </div>
+                <input class="form-control" type="text" id="cedula" placeholder="Cedula">
+                <input class="form-control" type="text" id="nombre" placeholder="Nombre">
+                <input class="form-control" type="text" id="apellido" placeholder="Apellido">
+                <button class="rounded-right border btn-secondary" id="filtrado">Filtrado</button>
+            </div>
+
+            <table id="tabla" class="table"></table>
+            <ul id="botonesPaginado" class="pagination pagination-lg mt-3 d-flex justify-content-center"> </ul>
+        </main>
+
+    </section>
+    <script src="../../JS/Opciones/Administrador/OpcionesAdministrador.js"></script>
+    <script src="../../JS/Opciones/Administrador/TableadoAdministrador.js"> </script>
+    <script src="../../JS/menu.js"> </script>
+</body>
+
+</html>

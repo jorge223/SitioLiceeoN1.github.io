@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap-4.6.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/blog/blog.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/animacion.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="fixed-top">
+        <div class="cont">
+            <img src="../../Imagen/Menu.jpeg" alt="Error" class="Menu float-left position-fixed"
+                onclick="mostrarlateral(); cambiarImagen();">
+            <p class="nombresup text-center">Liceo Nº1 Inicio</p>
+        </div>
+        <div id="Navegacion_superior" class="navbar-nav position-fixed bg-dark vw-100 text-center">
+            <p>Blog</p>
+        </div>
+    </header>
+    <section>
+        <nav class="Navegacion_lateral vh-100 col-2 p-0 position-fixed text-center d-none" id="oculto">
+            <figure class="">
+                <img src="../../Imagen/Logo.png" class="Logo" alt="Error al cargar">
+            </figure>
+            <ul class="lista_lateral m-0 p-0">
+                <div id="slider" class="slide-in">
+                    <li>
+                        <button class="boton1 list-group-item-action text-nowrap text-truncate"><a
+                                href="../../index.html">Inicio</a></button>
+                    </li>
+                    <li>
+                        <button class="boton2 list-group-item-action text-nowrap mt-2 text-truncate"><a
+                                href="../../HTML/Curso/horario.html">Cursos</a></button>
+                    </li>
+                    <li>
+                        <button
+                            class="boton3 list-group-item-action text-nowrap mt-2 text-truncate"><a
+                                href="../../HTML/Blog/pre-visual.html">Blog</a></button>
+                    </li>
+                    <li>
+                        <button
+                            class="boton4 list-group-item-action text-nowrap mt-2 text-truncate"><a
+                                href="../../HTML/Administrar/administrador.html">Administrar</a></button>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </section>
+    <section>
+        <main>
+            <div id="blogIndividual" class="border text-center text-break"></div>
+            <button class="btn btn-primary" id="like"></button>
+            <form id="Comentarios">
+                <textarea type="text" name="comentarioInput" id="comentarioInput" placeholder="¡Deja tu comentario!" maxlength="1000"></textarea>
+                <input type="submit" class="btn btn-success" value="Comentar">
+            </form>
+            <div id="comentarioDiv" class="mb-5"></div>
+        </main>
+    </section>
+    <footer class="PiePag text-white text-center text-break">
+        <div class="row m-0">
+            <div class="col-md-4">
+                <div class="">
+                    <div class="card-body">
+                        <p>Titulo</p>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, quae. Optio, laudantium
+                            veritatis? Distinctio veniam id odio aliquam excepturi suscipit adipisci voluptas nulla,
+                            illo commodi sint inventore assumenda itaque debitis!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+    
+                <div class="">
+                    <div class="card-body">
+                        <p>Titulo</p>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, quae. Optio, laudantium
+                            veritatis? Distinctio veniam id odio aliquam excepturi suscipit adipisci voluptas nulla,
+                            illo commodi sint inventore assumenda itaque debitis!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div>
+                    <div class="card-body">
+                        <p>Titulo</p>
+                        <p> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Repellat optio similique consectetur</p>
+                        <img src="../../Imagen/Facebook.png" alt="Error" class="facebook">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../JS/Opciones/Blog.js"></script>
+    <script src="../../JS/menu.js"> </script>
+</body>
+
+</html>

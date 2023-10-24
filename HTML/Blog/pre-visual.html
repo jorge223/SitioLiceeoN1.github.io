@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../bootstrap-4.6.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/blog/pre-visual.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/animacion.css">
+    <link rel="stylesheet" type="text/css" href="../../CSS/animacion.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="fixed-top">
+        <div class="cont">
+            <img src="../../Imagen/Menu.jpeg" alt="Error" class="Menu float-left position-fixed"
+                onclick="mostrarlateral(); cambiarImagen();">
+            <p class="nombresup text-center">Liceo Nº1 Inicio</p>
+        </div>
+        <div id="Navegacion_superior" class="navbar-nav position-fixed bg-dark vw-100 text-center">
+            <p>Blog</p>
+        </div>
+
+    </header>
+    <section>
+        <nav class="Navegacion_lateral vh-100 col-2 p-0 position-fixed text-center d-none" id="oculto">
+            <figure class="">
+                <img src="../../Imagen/Logo.png" class="Logo" alt="Error al cargar">
+            </figure>
+            <ul class="lista_lateral m-0 p-0">
+                <div id="slider" class="slide-in">
+                    <li>
+                        <button class="boton1 list-group-item-action text-nowrap text-truncate"><a
+                                href="../../index.html">Inicio</a></button>
+                    </li>
+                    <li>
+                        <button class="boton2 list-group-item-action text-nowrap mt-2 text-truncate"><a
+                                href="../../HTML/Curso/horario.html">Cursos</a></button>
+                    </li>
+                    <li>
+                        <button class="boton3 list-group-item-action text-nowrap mt-2 text-truncate"><a
+                                href="../../HTML/Blog/pre-visual.html">Blog</a></button>
+                    </li>
+                    <li>
+                        <button class="boton4 list-group-item-action text-nowrap mt-2 text-truncate"><a
+                                href="../../HTML/Administrar/administrador.html">Administrar</a></button>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </section>
+    <section>
+
+        <main>
+            <div id="publicar">
+                <button onclick="mostratOpciones()" class="lanzarPost btn btn-secondary mt-4 mb-4">Lanzar Post</button>
+                <form action="" id="FormularioBlogAniadir" class="ocultarForm">
+                    <input class="Titulo form-control" type="text" placeholder="Titulo" name="titulo" maxlength="20">
+                    <textarea class="form-control mt-4" type="text" placeholder="Contenido" name="contenido"
+                        maxlength="1500" id="Contenido"></textarea>
+                    <label for="listaEnum" class="mt-4">Este usuario podra visualizar el blog:</label>
+                    <select name="categoria" id="listaEnum" class="custom-select" size="3">
+                        <option selected value="Elegir">Elegir...</option>
+                        <option>Administrador</option>
+                        <option>Profesor</option>
+                        <option>Estudiante</option>
+                    </select>
+                    <input class="Enviar btn btn-success mb-3 mt-4" type="submit" value="Enviar">
+                </form>
+            </div>
+            <div id="blogContenedor" class="border container text-center text-break mt-3">
+
+            </div>
+            <ul id="botonesPaginadoBlog" class="pagination pagination-lg mt-5"> </ul>
+
+        </main>
+    </section>
+    <footer class="PiePag text-white text-break">
+        <div class="row m-0">
+            <div class="col-md-4">
+                <div class="">
+                    <div class="card-body">
+                        <p>Titulo</p>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, quae. Optio, laudantium
+                            veritatis? Distinctio veniam id odio aliquam excepturi suscipit adipisci voluptas nulla,
+                            illo commodi sint inventore assumenda itaque debitis!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="">
+                    <div class="card-body">
+                        <p>Titulo</p>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, quae. Optio, laudantium
+                            veritatis? Distinctio veniam id odio aliquam excepturi suscipit adipisci voluptas nulla,
+                            illo commodi sint inventore assumenda itaque debitis!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="">
+                    <div class="card-body">
+                        <p>Titulo</p>
+                        <p> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Repellat optio similique consectetur</p>
+                        <img src="../../Imagen/Facebook.png" alt="Error" class="facebook">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../JS/Opciones/Pre-visual.js"> </script>
+    <script src="../../JS/menu.js"> </script>
+</body>
+
+</html>

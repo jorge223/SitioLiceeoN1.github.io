@@ -1,0 +1,15 @@
+#subirImg input[type="text"]{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card{
+    background-color: #ffc261;
+    max-width: 100%;
+}
+
+.card img{
+    max-width: 100%;
+}
